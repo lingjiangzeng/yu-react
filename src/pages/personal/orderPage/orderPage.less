@@ -1,0 +1,113 @@
+.orderoage {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+  .seachbox {
+    width: 100%;
+    height: 78px;
+    border-bottom:2px solid var(--fontcolor1);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0px 24px 0px 24px;
+    flex-shrink: 0;
+
+    .timeto {
+      font-size: 18px;
+      font-weight: 500;
+    }
+
+    .searchbut {
+      margin-left: 32px;
+    }
+  }
+  
+
+  .orderlist {
+    width: 100%;
+    height: calc(100% - 80px);;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding-bottom: 24px;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    
+    .tableiamge {
+      width: 45px;
+      height: 45px;
+      object-fit: contain;
+      cursor: pointer;
+    }
+
+    .tableprice {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+      .priceusicon {
+        font-size: 20px;
+        color:var(--golden)
+      }
+
+      span {
+        margin-top: 4px;
+        font-size: 18px;
+        font-weight: 550;
+        color:var(--golden)
+      }
+    }
+
+  }
+}
+
+// 重置时间弹窗的样式
+.MuiModal-root-addlclass {
+  .MuiBackdrop-root {
+    display: none;
+  }
+  .MuiDialog-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left:0px;
+    top:0px;
+    .MuiPaper-root {
+      position: absolute;
+      left:198px;
+      top:90px;
+      margin: 0px 0px 0px 0px;
+    }
+  }
+}
+.MuiModal-root-addlclass-1 {
+  .MuiBackdrop-root {
+    display: none;
+  }
+  .MuiDialog-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left:260px;
+    top:0px;
+    .MuiPaper-root {
+      position: absolute;
+      left:198px;
+      top:90px;
+      margin: 0px 0px 0px 0px;
+    }
+  }
+}

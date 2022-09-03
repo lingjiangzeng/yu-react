@@ -1,0 +1,34 @@
+.bannerbox  {
+  width: calc(100% - 48px);
+  height:35vw;
+  margin-top: 24px;
+  min-width:1000px;
+  min-height: 480px;
+  transform-style: preserve-3d;
+  position: relative;
+
+  .banner{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    height:100%;
+    border-radius: 4px;
+    cursor: pointer;
+    position: absolute;
+    transition: all 1.5s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  
+    .imagebox {
+      width: calc(100% - 2px);
+      height: calc(100% - 2px);
+      overflow: hidden;
+      border-radius: 4px;
+      
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}

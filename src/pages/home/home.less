@@ -1,0 +1,251 @@
+.main {
+  width: 100%;
+}
+
+.miandrawerclass {
+
+  .MuiBackdrop-root{
+    backdrop-filter: blur(8px);
+    background-color: var(--whitebag72);
+  }
+
+  .cartbox {
+    width:640px;
+    height: 100%;
+    position: relative;
+
+    .titlebox {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 50px;
+      z-index: 9;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      box-shadow: inset 0px -1px 1px var(--boxshadowcolor);
+      backdrop-filter: blur(8px);
+      background-color: var(--whitebag72);
+
+      .back {
+        margin-left: 15px;
+        color:var(--whitebag);
+        width: 36px;
+        height: 36px;
+        .icon {
+          font-size: 18px;
+        }
+      }
+      
+    }
+
+    .contentbox {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      width: 100%;
+      height:100%;
+      overflow-x: hidden;
+      overflow-y: auto;
+
+      &::-webkit-scrollbar{
+        display: none;
+      }
+
+      .listitem {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content:flex-start;
+        align-items: center;
+        width: 95%;
+        height: 165px;
+        flex-shrink: 0;
+        margin-top: 10px;
+        position: relative;
+        overflow:hidden;
+
+        &:last-child{
+          margin-bottom: 90px;
+        }
+
+        &:first-child{
+          margin-top: 60px;
+        }
+
+        .goodmsg {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: flex-start;
+          width: 85%;
+          height: 90%;
+
+          img{
+            width: 140px;
+            height: 140px;
+            border-radius: 4px;
+            object-fit: contain;
+            margin-left: 24px;
+            flex-shrink: 0;
+          }
+
+          .goodtext{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-between;
+            height: 100px;
+            width: calc(100% - 212px);
+            margin-left: 24px;
+            flex-shrink: 0;
+
+            .goodname {
+              font-size: 18px;
+              font-weight: 550;
+              word-wrap: break-word;
+              word-break: break-all;
+            }
+
+            .goodsqp {
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: flex-start;
+
+
+              .priceusicon {
+                font-size: 20px;
+                color:var(--golden)
+              }
+
+              span {
+                margin-top: 0px;
+                font-size: 18px;
+                font-weight: 550;
+                color:var(--golden)
+              }
+            }
+          }
+
+        }
+
+        .deletegoods {
+          position: absolute;
+          top: 5px;
+          right: 5px;
+          color: var(--fontcolor1);
+        }
+      }
+    }
+
+    .bottombox {
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content:  flex-start;
+      width: 100%;
+      height: 80px;
+      z-index: 9;
+      padding-left: 2.5%;
+      padding-right: 2.5%;
+      box-shadow: inset 0px 1px 0px var(--boxshadowcolor);
+      backdrop-filter: blur(8px);
+      background-color: var(--whitebag72);
+
+      .topay {
+        margin-left: 40%;
+      }
+    }
+  }
+}
+//登录
+.miandialogclass {
+
+  .MuiBackdrop-root {
+    backdrop-filter: blur(8px);
+    background-color: var(--whitebag72);
+   }
+
+   .MuiPaper-root {
+     min-width: 500px;
+   }
+   
+  .loginbox {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    .close{
+      text-transform: none;
+      position: absolute;
+      top: 7px;
+      right: 10px;
+      color: var(--fontcolor1);
+    }
+
+    .loginiconbox {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      margin-top: 64px;
+      position: relative;
+      width: 42px;
+      height: 42px;
+      background-color: var(--fontcolor1);
+      border-radius: 50%;
+      
+      .loginicon {
+        color: var(--whitebag);
+        margin-right: 5px;
+        font-size: 24px;
+      }
+    }
+
+    .logintitle {
+      margin-top: 5px;
+      font-size: 15px;
+      font-weight: 550;
+      color: var(--fontcolor);
+    }
+
+    .inputext {
+      margin-top: 36px;
+      width: 70%;
+
+      .MuiFilledInput-root {
+        background-color: var(--whitebag);
+      }
+    }
+
+    .confirmbtn {
+      margin-top: 72px;
+      width: 55%;
+      height: 50px;
+    }
+    
+    .verificationerror {
+      margin-top: 24px;
+    }
+
+    .loginoption {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+
+      .MuiButton-root{
+        text-transform: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,140 @@
+.mainheader{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  transition: top 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  z-index: 1100;
+  backdrop-filter: blur(20px);
+  box-shadow: inset 0px -1px 1px var(--boxshadowcolor);
+  background-color: var(--whitebag72);
+
+  .hearleft {
+    height: 100%;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-shrink: 0;
+
+    .logoIcon {
+      margin-left: 50px;
+      width: 65px;
+      height: 65px;
+    }
+
+    .Stacknox {
+      margin-top: 30px;
+      margin-left: 40px;
+
+      .btn {
+        font-size: 13px;
+        font-weight: 550;
+        color: var(--fontcolor);
+      }
+
+      .activebtn{
+        color:  var(--fontcolor1);
+      }
+    }
+
+    .allonmeuns {
+      margin-left: 50px;
+    }
+  }
+
+  .search {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 450px;
+    height:42px;
+    border-radius: 8px;
+    flex-shrink: 0;
+    cursor: pointer;
+    margin-left: 50px;
+    margin-right: 50px;
+    background: var(--whitebag);
+    box-shadow: 0px 3px 5px -1px rgb(0 0 0 / 20%), 0px 6px 10px 0px rgb(0 0 0 / 14%), 0px 1px 18px 0px rgb(0 0 0 / 12%);
+
+    &:hover {
+      background: var(--hoverseach);
+    }
+    
+    .searchicon {
+      color: var(--fontcolor1);
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+    .searchinput {
+      height: 100%;
+      flex: 1;
+      border: none;
+      outline: none;
+      background: var(--whitebag00);
+      font-size: 18px;
+      color: var(--fontcolor);
+    }
+
+    .searchbtn {
+      border-top-left-radius: 0px;
+      border-bottom-left-radius: 0px;
+    }
+  }
+
+  // 个人中心
+  .operation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+    
+      .cartbtn {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 50px;
+
+        .icon {
+          font-size: 28px;
+        }
+      }
+
+  }
+}
+// 收起的菜单按钮
+.allonmeunsbtn {
+  font-size: 12px;
+  font-weight: 550;
+  color: var(--fontcolor);
+  text-transform: uppercase;
+
+  &:hover {
+    color: var(--fontcolor1);
+  }
+}
+
+.allonmeunsactivebtn{
+  color: var(--fontcolor1);
+}
+
+// 个人中心菜单
+.operationmeunsbtn {
+  font-size: 13px;
+  font-weight: 550;
+  color: var(--fontcolor);
+  text-transform: lowercase;
+
+  &:hover {
+    color: var(--fontcolor1);;
+  }
+}

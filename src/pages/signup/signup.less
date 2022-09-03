@@ -1,0 +1,149 @@
+.signup {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+
+  .back {
+    position: fixed;
+    left: 15px;
+    top: 15px;
+    transition: top 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    z-index: 1100;
+    flex-shrink: 0;
+  }
+
+  .signupbox{
+    margin-top: 100px;
+    width: 600px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+
+    .signiplogo {
+      height: 140px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+
+      .logo{
+        font-size: 50px;
+        color: var(--fontcolor1);
+      }
+      span{
+        color: var(--fontcolor1);
+        font-weight: 600;
+        font-size: 24px;
+      }
+    }
+
+    .signupboxhr{
+      border-top: 2px solid var(--fontcolor1);
+      margin-top: 15px;
+    }
+
+    .validationemail{
+      width: 100%;
+      height: 300px;
+      margin-top:35px;
+      margin-bottom:100px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+
+      .enteremail {
+        width: 350px; 
+        margin-top:30px;
+      }
+
+      .verificationcode{
+        width: 350px;
+        margin-top:45px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        .enterverificationcode {
+          width: 250px;
+        }
+
+        .getcodebut {
+          height: 40px;
+          width: 90px;
+          letter-spacing:0px;
+        }
+
+      }
+    
+    }
+
+    .accountandpassword{
+      width: 100%;
+      height: 300px;
+      margin-top:35px;
+      margin-bottom:100px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+
+      .enteraccount, .enterpassword {
+        width: 350px;
+        margin-top:30px;
+      }
+      .enterpassword {
+        margin-top:40px;
+      }
+    }
+
+    .registeredsuccessfully {
+      width: 100%;
+      height: 300px;
+      margin-top:35px;
+      margin-bottom:100px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+
+      >span {
+        color: var(--fontcolor1);
+        font-weight: 600;
+        font-size: 24px;
+      }
+      >div {
+        width: 80%;
+        color: var(--fontcolor);
+        font-weight: 500;
+        margin-top: 30px;
+        
+        span{
+          line-height: 24px;
+        }
+        .jumplogin{
+          color: var(--fontcolor1);
+          cursor: pointer;
+        }
+      }
+    }
+
+    .nextbut{
+      position: absolute;
+      right: 50px;
+      bottom: 50px;
+    }
+
+    .errormsg{
+      position: absolute;
+      width: 80%;
+      left: 10%;
+      top: 240px;
+    }
+  }
+}
